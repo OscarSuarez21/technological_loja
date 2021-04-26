@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/reltive"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="2dp">
+
+
+        <ImageView
+            android:id="@+id/istloja"
+            android:layout_marginTop="20dp"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ist"/>
+        <TextView
+            android:layout_below="@+id/istloja"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtnombre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Instituto Superior"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/txtnombre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtnombre1"
+            android:text="Tecnológico Loja"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
+            android:textSize="30sp"/>
+
+        <LinearLayout
+            android:layout_below="@id/txtnombre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/camara"
+                style="?attr/maxButtonHeight"
+                android:background="#00FFFFFF"
+                android:onClick="info"
+                android:src="@drawable/ic_baseline_info_24" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_marginTop="5dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="5dp">
+
+        <!-- Row 1 -->
+        <!-- Column 1 -->
+
+        <android.support.v7.widget.CardView
+           android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_home_24"/>
+
+                <Button
+                    android:id="@+id/btnhome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn"
+                    android:textColor="@drawable/txt_btn"
+                    android:textStyle="italic"
+                    android:textSize="14sp"
+                    android:text="Inicio"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Row 2 -->
+        <!-- Column 2 -->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_supervisor_account_24"/>
+
+                <Button
+                    android:id="@+id/btnequipo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn"
+                    android:textColor="@drawable/txt_btn"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:text="Nuestro Equipo"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Row 3 -->
+        <!-- Column 3 -->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_library_books_24"/>
+
+                <Button
+                    android:id="@+id/btnofertas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn"
+                    android:textColor="@drawable/txt_btn"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:text="Ofertas Academicas"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!-- Row 4 -->
+        <!-- Column 4 -->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_camera_24"/>
+
+                <Button
+                    android:id="@+id/btnmatricula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn"
+                    android:textColor="@drawable/txt_btn"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:text="Camara"/>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <!-- Row 5 -->
+        <!-- Column 5 -->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_maps_ugc_24"/>
+
+                <Button
+                    android:id="@+id/btnservicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn"
+                    android:textColor="@drawable/txt_btn"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:text="Mapa"/>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <!-- Row 6 -->
+        <!-- Column 6 -->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_contact_phone_24"/>
+
+                <Button
+                    android:id="@+id/btncontacto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn"
+                    android:textColor="@drawable/txt_btn"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:text="Contactos"/>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </GridLayout>
+
+</LinearLayout>

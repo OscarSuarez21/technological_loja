@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/reltive"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="2dp">
+
+
+        <ImageView
+            android:id="@+id/istinicio"
+            android:layout_marginTop="20dp"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ist"/>
+        <TextView
+            android:layout_below="@+id/istinicio"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtnombre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Instituto Superior"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/txtnombre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtnombre1"
+            android:text="Tecnológico Loja"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
+            android:textSize="30sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtnombre2"
+            android:layout_marginRight="10dp"
+            android:fontFamily="cursive"
+            android:text="Define tu Futuro! "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:id="@+id/txtinfo"
+            android:layout_marginTop="60dp"
+            android:padding="10dp"
+            android:layout_below="@id/txtnombre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/txtnombre2"
+                android:layout_marginRight="10dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Vición "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtnombre2"
+                android:layout_marginRight="1dp"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="“Para el año 2022, ser una Institución de Educación Superior Técnica y Tecnológica acreditada, comprometida con la docencia, vinculación e investigación para el desarrollo social y productivo”"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/txtnombre2"
+                android:layout_marginRight="10dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Mición "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtnombre2"
+                android:layout_marginRight="1dp"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="“Somos una institución de Educación Superior a nivel técnico y tecnológico, dedicada a formar profesionales comprometidos éticamente con la sociedad, desde una preparación basada en entornos de aprendizaje académicos y experienciales que contribuyan al desarrollo de matriz productiva de la región”"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_below="@id/txtinfo"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/istlv"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

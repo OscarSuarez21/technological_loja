@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    tools:context=".RuntimePermissionRequestActivity">
+
+    <LinearLayout
+        android:layout_marginBottom="40dp"
+        android:id="@+id/Conexion"
+        android:layout_width="355dp"
+        android:layout_height="600dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:fontFamily="cursive"
+            android:textSize="30sp"
+            android:layout_marginRight="10dp"
+            android:padding="20dp"
+            android:text="BIENVENIDOS"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/imageLoked"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ist" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="Instituto Superior "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="Tecnologíco Loja "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:fontFamily="cursive"
+            android:text="Define tu Futuro! "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Esta aplicacion incluye realidad virtual, pruebalo."
+           />
+
+    </LinearLayout>
+
+</RelativeLayout>
