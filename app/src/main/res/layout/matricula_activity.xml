@@ -13,7 +13,7 @@
 
     <RelativeLayout
         android:id="@+id/reltive"
-        android:layout_weight="4"
+        android:layout_weight="5"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginHorizontal="2dp">
@@ -27,14 +27,14 @@
             android:layout_centerHorizontal="true"
             android:src="@drawable/ist"/>
         <TextView
-            android:layout_below="@+id/istloja"
+            android:layout_below="@+id/is"
             android:layout_marginTop="10dp"
             android:id="@+id/txtnombre1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:text="Instituto Superior"
-            android:textColor="#FFFFFF"
+            android:textColor="#1D2B5C"
             android:textStyle="italic"
             android:textSize="25sp"/>
         <TextView
@@ -44,9 +44,18 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/txtnombre1"
             android:text="Tecnológico Loja"
-            android:textColor="#FFFFFF"
+            android:textColor="#1D2B5C"
             android:textStyle="italic"
             android:textSize="30sp"/>
+        <TextView
+            android:layout_below="@+id/txtnombre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:fontFamily="cursive"
+            android:text="Define tu Futuro! "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
     </RelativeLayout>
 
