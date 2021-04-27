@@ -8,14 +8,14 @@
     android:orientation="vertical"
     android:background="@drawable/bg_color"
     android:weightSum="10"
-    tools:context=".MainActivity">
+    tools:context=".MatriculaActivity">
 
 
     <RelativeLayout
         android:id="@+id/reltive"
         android:layout_weight="5"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="150dp"
         android:layout_marginHorizontal="2dp">
 
 
@@ -60,7 +60,7 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/txtnombre2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,23 +75,25 @@
             android:layout_below="@+id/txtnombre2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            style="?attr/maxButtonHeight"
-            android:background="#00FFFFFF"
             android:onClick="camara"
+            android:background="#00FFFFFF"
             android:src="@drawable/ic_baseline_camera_alt_24" />
 
         <ImageButton
-
+            android:id="@+id/scaner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
+            android:onClick="camera"
             android:layout_below="@+id/camara"
-            style="?attr/maxButtonHeight"
             android:background="#00FFFFFF"
             android:src="@drawable/ic_baseline_qr_code_scanner_24" />
 
     </LinearLayout>
+
+
+
 
 
 

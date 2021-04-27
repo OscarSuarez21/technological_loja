@@ -38,4 +38,8 @@ public class MatriculaActivity extends Activity {
         Intent intent = new Intent(v.getContext(), RuntimePermissionRequestActivity.class);
         startActivityForResult(intent,0);
     }
+    public void camera(View v){
+        Intent intent = new Intent(v.getContext(), RuntimePermissionRequestActivity.class);
+        startActivityForResult(intent,0);
+    }
 }
